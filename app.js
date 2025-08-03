@@ -11,7 +11,7 @@ async function fetchLyrics() {
   lyricsEl.textContent = "🔍 Buscando letra...";
 
   try {
-    const proxyURL = `https://letrasync-proxy.vercel.app/api?artist=${encodeURIComponent(artist)}&title=${encodeURIComponent(title)}`;
+    const proxyURL = `https://letrasync-proxy2.vercel.app/api?artist=${encodeURIComponent(artist)}&title=${encodeURIComponent(title)}`;
     const res = await fetch(proxyURL);
     const data = await res.json();
 
